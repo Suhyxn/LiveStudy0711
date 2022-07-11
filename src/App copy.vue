@@ -10,9 +10,17 @@
   </main>
 </template>
 
-<script setup lang="ts">
+<script lang="ts">
+import { defineComponent } from 'vue'
 import LNB from '~/components/LNB.vue'
 import TheHeader from '~/components/TheHeader.vue'
+
+export default defineComponent({
+  components: {
+    LNB,
+    TheHeader
+  }
+})
 </script>
 
 <style lang="scss">
