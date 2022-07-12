@@ -44,7 +44,7 @@ const handler: Handler = async event => {
         <meta property="twitter:title" content="${title}" />
         <meta property="twitter:description" content="${content}" />
         <meta property="twitter:image" content="${poster}" />
-        <meta property="twitter:url" content="https://bright-cocada-dce05f.netlify.app/workspaces/${id}" />
+        <meta property="twitter:url" content="${PUBLIC_URL}/workspaces/${id}" />
 
         <link rel="icon" href="https://heropy.blog/css/images/logo.png">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
