@@ -1,8 +1,8 @@
 import isbot from 'https://cdn.skypack.dev/isbot'
 import { Context } from 'netlify:edge'
 
-const APIKEY = Deno.env.get('APIKEY')
-const USERNAME = Deno.env.get('USERNAME')
+const APIKEY = Deno.env.get('APIKEY') as string
+const USERNAME = Deno.env.get('USERNAME') as string
 const PUBLIC_URL = Deno.env.get('PUBLIC_URL') as string
 
 export default async (request: Request, context: Context) => {
